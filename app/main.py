@@ -11,7 +11,7 @@ def move_file(command: str) -> None:
 
     directories = destination.split("/")
 
-    if separated[0] != "mv":
+    if com != "mv":
         return
 
     if len(directories) == 1:
@@ -35,4 +35,4 @@ def move_file(command: str) -> None:
 
         outfile.write(opened_file)
 
-    remove(separated[1])
+    remove(source)
