@@ -15,8 +15,9 @@ def move_file(command: str) -> None:
         return
 
     if len(directories) == 1:
-        rename(separated[1], separated[2])
+        rename(source, destination)
         return
+
     directory = ""
     for direct in directories[0:-1]:
 
